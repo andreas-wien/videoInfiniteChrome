@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "videoInfiniteChrome",
+    "version": "0.1.0",
+    "description": "Makes sure that autoplay of a playlist continues on big video platforms.",
+    "homepage_url": "https://github.com/andreas-wien/videoInfiniteChrome",
+    "icons": {
+        "48": "icons/infinity48.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.youtube.com/*"
+            ],
+            "js": [
+                "main.js"
+            ]
+        }
+    ]
+}
