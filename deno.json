@@ -1,0 +1,17 @@
+{
+  "tasks": {
+    "build": "deno run --allow-read --allow-write --allow-run --allow-env ./build/bundle.ts"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1",
+    "esbuild": "https://deno.land/x/esbuild@v0.19.4/mod.js"
+  },
+  "compilerOptions": {
+    "lib": [
+      "deno.ns",
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ]
+  }
+}
